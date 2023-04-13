@@ -1,0 +1,721 @@
+@media screen and (max-width: 768px) {
+  /* 当屏幕宽度小于等于 768px 时隐藏导航栏 */
+  nav {
+  display: none;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: rgba(44, 62, 80, 0.8); /* 半透明的背景颜色 */
+  color: #fff; /* 文本颜色 */
+}
+
+header {
+  background-color:rgba(44, 62, 80, );
+  color: rgb(189, 186, 151);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-family: "华文行楷", cursive;
+}
+
+h3 {
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  margin: 20px;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* 推荐 */
+.recommend-site {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 0;
+  padding: 0;
+}
+
+.recommend-site li {
+  margin: 10px;
+}
+
+.recommend-site a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.recommend-site a:hover {
+  color: #007bff;
+}
+
+.recommend-site img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 5px;
+}
+
+.feedback-btn {
+  height: 32px;
+  padding: 0 20px;
+  border-radius: 16px;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.feedback-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+/* 导航栏 */
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #333;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.nav-dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  z-index: 1;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown:hover > a {
+  background-color: #ccc;
+}
+
+.nav-list > li {
+  position: relative;
+}
+
+.nav-dropdown > a {
+  position: relative;
+}
+
+.nav-dropdown-menu li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-dropdown-menu li a:hover {
+  background-color: #f7f7f7;
+}
+
+/* 社交导航的样式
+.social-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-nav-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-nav-list li:last-child {
+  margin-right: 0;
+}
+
+.social-nav-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-nav-dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  z-index: 1;
+}
+
+.social-nav-dropdown:hover .social-nav-dropdown-menu {
+  display: block;
+}
+
+.social-nav-dropdown:hover > a {
+  background-color: #ccc;
+}
+
+.social-nav-dropdown > a {
+  position: relative;
+}
+
+.social-nav-dropdown-menu li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.social-nav-dropdown-menu li a:hover {
+  background-color: #f7f7f7;
+} */
+
+/* 游戏导航的样式
+.game-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game-nav-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.game-nav-list li:last-child {
+  margin-right: 0;
+}
+
+.game-nav-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.game-nav-dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  z-index: 1;
+}
+
+.game-nav-dropdown:hover .game-nav-dropdown-menu {
+  display: block;
+}
+
+.game-nav-dropdown:hover > a {
+  background-color: #ccc;
+}
+
+.game-nav-dropdown > a {
+  position: relative;
+}
+
+.game-nav-dropdown-menu li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.game-nav-dropdown-menu li a:hover {
+  background-color: #f7f7f7;
+} */
+
+/* 更多导航的样式
+.more-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.more-nav-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.more-nav-list li:last-child {
+  margin-right: 0;
+}
+
+.more-nav-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.more-nav-dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  z-index: 1;
+}
+
+.more-nav-dropdown:hover .more-nav-dropdown-menu {
+  display: block;
+}
+
+.more-nav-dropdown:hover > a {
+  background-color: #ccc;
+}
+
+.more-nav-dropdown > a {
+  position: relative;
+}
+
+.more-nav-dropdown-menu li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.more-nav-dropdown-menu li a:hover {
+  background-color: #f7f7f7;
+} */
+
+/* // */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* 主要 */
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.search-and-recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color:rgba(167, 202, 238, 0.8); 
+  border-radius: 10px;
+}
+
+.search-and-recommend h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.search-and-recommend form {
+  margin-bottom: 20px;
+}
+
+.search-and-recommend input[type="text"] {
+  width: 400px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+  padding: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.search-and-recommend input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.search-and-recommend button[type="submit"] {
+  height: 32px;
+  padding: 0 20px;
+  border-radius: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-and-recommend button[type="submit"]:hover {
+  background-color: #006fe6;
+}
+
+
+summary{
+  text-align: center;
+}
+
+
+
+
+/* 搜索框 */
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-engine {
+color: #006fe6;
+/* width: 200px; */
+/* height: 25px; */
+/* border: 1px solid #ccc; */
+border: none;
+background-color: none;
+/* background-color: #fff; */
+font-size: 30px;
+padding: 5px;
+text-align: center;
+outline: none;
+}/* 搜索引擎 */
+
+
+#search-engine option {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}/* 选择器 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative; /* 添加相对定位 */
+}
+
+input[type="text"] {
+  appearance: none;
+  border: 2px solid #ccc; /* 未选中时的外框颜色 */
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  color: #333;
+  outline: none; /* 去掉默认的描边 */
+}
+
+input[type="text"]:focus {
+  border-color: #0078d7; /* 选中时的外框颜色 */
+}
+
+button[type="submit"] {
+  appearance: none;
+  border: none;
+  background-color: #0078d7;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #106eb9;
+}
+
+/* 时钟 */
+#date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  color: #333;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+
+
+/* 链接修饰 */
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link {
+  width: 18%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .link {
+    width: 40%;
+  }
+}
+
+
+/* 搜索引擎*/
+/* 隐藏默认样式 */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* margin-left: -140px; 调整与搜索框之间的距离 */
+}
+
+/* 添加背景色和阴影效果 */
+select:focus {
+  background-color: #f5f5f5;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}
+
+/* 自定义箭头 */
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* 设置鼠标悬停时的样式 */
+select:hover {
+  border-color: #666;
+}
+
+/* 设置选中项的背景和字体颜色 */
+select option:checked {
+  background-color: #666;
+  color: #fff;
+}
+
+/* 搜索框样式 */
+#search-box {
+  display: inline-block;
+  position: relative;
+}
+
+
+/* 音乐播放器 */
+.music-player {
+  position: relative;
+}
+.controls {
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+input[type="range"] {
+  width: 200px;
+}
+
+#prev-button, #play-button, #pause-button, #next-button {
+  border: none; /* 去掉边框 */
+  border-radius: 50%; /* 圆形按钮 */
+  background-color: #fff; /* 白色背景 */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); /* 添加阴影 */
+  color: #333; /* 字体颜色 */
+  cursor: pointer; /* 光标变为手型 */
+  font-size: 24px; /* 字体大小 */
+  height: 48px; /* 高度 */
+  margin: 0 10px; /* 左右间距 */
+  outline: none; /* 去掉聚焦时的外框 */
+  transition: all 0.2s ease-in-out; /* 添加过渡效果 */
+  width: 48px; /* 宽度 */
+}
+
+#prev-button:hover, #play-button:hover, #pause-button:hover, #next-button:hover {
+  background-color: #ddd; /* 鼠标悬停时的背景色 */
+}
+
+#prev-button:focus, #play-button:focus, #pause-button:focus, #next-button:focus {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25), 0px 0px 0px 4px #5fa5e7; /* 聚焦时添加外框 */
+}
+
+#prev-button {
+  transform: rotate(180deg); /* 将向左的箭头按钮翻转为向右 */
+}
+
+/* #play-button {
+  display: none;}  初始状态下隐藏播放按钮 */
+
+
+#pause-button {
+  display: block; /* 初始状态下展示暂停按钮 */
+}
+
+#prev-button {
+  background-color: #fff;
+  color: #999;
+}
+
+#prev-button i:before {
+  content: '\f060';
+}
+
+#play-button {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+#play-button i:before {
+  content: '\f04b';
+}
+
+#pause-button {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+#pause-button i:before {
+  content: '\f04c';
+}
+
+#next-button {
+  background-color: #fff;
+  color: #999;
+}
+
+#next-button i:before {
+  content: '\f061';
+}
+
+
+/* audio::-webkit-media-controls-play-button {
+  color: red;
+  background-color: blue;
+} */
+
+
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* 初始状态隐藏 */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  max-width: 90%; /* 图片最大宽度 */
+  max-height: 90%; /* 图片最大高度 */
+}
+
+
+/* 广告 */
+/* .ads {
+  animation-name: float;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
