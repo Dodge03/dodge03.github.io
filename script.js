@@ -1,35 +1,3 @@
-/*news*/
-// 获取文章数据的网址
-const url = "https://v1.hitokoto.cn";
-
-// 获取 DOM 元素
-const generateButton = document.getElementById("generate");
-const outputDiv = document.getElementById("output");
-
-// 点击按钮时触发文章生成器
-generateButton.onclick = () => {
-  // 发送 HTTP 请求获取文章数据
-  fetch(`${url}/?c=b&encode=json`)
-    .then(response => response.json())
-    .then(data => {
-      // 构建文章 HTML
-      const articleHTML = `
-        <div class="article">
-          <h2>${data.hitokoto}</h2>
-          <p>-- ${data.from_who ? data.from_who + '，' : ''}${data.from}</p>
-        </div>
-      `;
-      
-      // 在页面中输出文章 HTML
-      outputDiv.innerHTML += articleHTML;
-    })
-    .catch(error => {
-      console.log(error);
-      outputDiv.innerHTML += "<p>出现错误，请稍后重试。</p>";
-    });
-};
-
-
 // 时间
 function updateTime() {
   const now = new Date();
