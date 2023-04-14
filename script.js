@@ -43,8 +43,6 @@ if (searchEngine.includes('baidu')) {
   result = `${searchEngine}/${searchInput}`;
 } else if (searchEngine.includes('bilibili')) {
   result = `${searchEngine}?keyword=${searchInput}`;
-} else if (searchEngine.includes('xiaohongshu')) {
-  result = `${searchEngine}?keyword=${searchInput}`;
 } else if (searchEngine.includes('douyin')) {
   result = `${searchEngine}/${searchInput}`;
 } else if (searchEngine.includes('bing')) {
