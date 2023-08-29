@@ -398,7 +398,20 @@
 
 
 
-    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81ODkyMC8zNTM4Mg"></div>
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-livere">livere</a></li>
+            <li class="tab"><a href="#comment-utterances">utterances</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane livere" id="comment-livere">
+              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81ODkyMC8zNTM4Mg"></div>
+            </div>
+            <div class="tab-pane utterances" id="comment-utterances">
+              <div class="comments utterances-container"></div>
+            </div>
+        </div>
+      </div>
 </div>
   </main>
 
@@ -455,6 +468,8 @@
 
 
 <script src="/js/third-party/comments/livere.js"></script>
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Dodge03/my-project","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>
